@@ -66,7 +66,7 @@ class ApplicationTest {
     }
 
     @Test
-    fun `can retrieve xml`() {
+    fun `can retrieve xml using the jsonfeature`() {
         runBlocking {
             val client = HttpClient(MockEngine) {
                 install(JsonFeature) {
